@@ -1,0 +1,62 @@
+<?xml version="1.1"?>
+<!-- NOTE: Any NULL bytes in requests and responses are preserved within this output, even though this strictly breaks the XML syntax. If your XML parser rejects the NULL bytes then you will need to remove or replace these bytes before parsing. Alternatively, you can use the option to base64-encode requests and responses. -->
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="1.7.26" exportTime="Fri Mar 09 19:08:28 CST 2018">
+  <item>
+    <time>Fri Mar 09 19:07:54 CST 2018</time>
+    <url><![CDATA[http://1ffe7e53c03f482f9ab52dbaeb793de1b3da3fe5216442c9.game.ichunqiu.com/fl3g_ichuqiu.php]]></url>
+    <host ip="106.39.208.9">1ffe7e53c03f482f9ab52dbaeb793de1b3da3fe5216442c9.game.ichunqiu.com</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/fl3g_ichuqiu.php]]></path>
+    <extension>php</extension>
+    <request base64="false"><![CDATA[GET /fl3g_ichuqiu.php HTTP/1.1
+Host: 1ffe7e53c03f482f9ab52dbaeb793de1b3da3fe5216442c9.game.ichunqiu.com
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: pgv_pvi=7750024192; chkphone=acWxNpxhQpDiAchhNuSnEqyiQuDIO0O0O; Hm_lvt_9104989ce242a8e03049eaceca950328=1520223465,1520581094; Hm_lvt_1a32f7c660491887db0960e9c314b022=1520223465,1520581094; pgv_si=s8580954112; Hm_lvt_2d0601bd28de7d49818249cf35d95943=1520581087,1520581748,1520583768,1520592505; ci_session=cc79f5d283031e8c738ef8af4137c40cbaa882a4; Hm_lpvt_2d0601bd28de7d49818249cf35d95943=1520593588; user=bUxKYRy7HxtZEw%3d%3d
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>232</responselength>
+    <mimetype>CSS</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Server: nginx/1.10.2
+Date: Fri, 09 Mar 2018 10:50:03 GMT
+Content-Type: text/html;charset=utf-8
+Content-Length: 42
+Connection: close
+X-Powered-By: PHP/5.5.9-1ubuntu4
+
+flag{83f3fb77-26d6-4b73-a40f-f812ad16bb3a}]]></response>
+    <comment></comment>
+  </item>
+</items>
